@@ -1,0 +1,67 @@
+import turtle as tur
+
+def adjustment():
+    scr = tur.Screen()
+    scr.bgcolor("black")
+    tur.pensize(2)
+    tur.penup()
+    tur.pencolor("white")
+    tur.shape("turtle")
+    tur.goto(-230, 300)
+    tur.pendown()    
+
+def top_left_shape():
+    tur.color("white")
+    tur.begin_fill()
+    tur.forward(180)
+    tur.right(90)
+    tur.forward(45)
+    tur.right(90)
+    tur.forward(100)
+    tur.left(90)
+    tur.forward(75)
+    tur.right(90)
+    tur.forward(50)
+    tur.right(90)
+    tur.forward(120)
+    tur.end_fill()
+    
+def right_long_shape():
+    tur.color("black")
+    tur.pencolor("white")
+    
+    tur.right(90)
+    tur.penup()
+    tur.goto(10, 300)
+    tur.pendown()    
+    tur.begin_fill()
+    tur.forward(180)
+    tur.right(90)
+    tur.forward(200)
+    tur.left(90)
+    tur.forward(150)
+    tur.right(90)
+    tur.forward(150)
+    tur.right(90)
+    tur.forward(40)
+    tur.right(90)
+    tur.forward(100)
+    tur.left(90)
+    tur.forward(150)
+    tur.right(90)
+    tur.forward(210)
+    tur.left(90)
+    tur.forward(135)
+    tur.right(90)
+    tur.forward(30)
+    tur.color("white")
+    tur.end_fill()
+    
+def invoke_all_function():
+    adjustment()
+    top_left_shape()
+    right_long_shape()
+
+
+invoke_all_function()
+tur.exitonclick()
